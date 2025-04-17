@@ -907,6 +907,16 @@ section,
   }
 }
 
+.section-title h4 {
+  color: var(--heading-color);
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: var(--heading-font);
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
