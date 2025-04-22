@@ -60,7 +60,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Faça seu Orçamento</a>
+      <a class="cta-btn" href="javascript:void(0)" onclick="toggleCarrinho()">Faça seu Orçamento</a>
+
 
     </div>
   </header>
@@ -713,6 +714,8 @@
 
     </section><!-- /Contact Section -->
 
+
+
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -806,6 +809,111 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    let servicosSelecionados = [];
+
+    function toggleCarrinho() {
+      const carrinho = document.getElementById('carrinhoSidebar');
+      carrinho.classList.toggle('open');
+    }
+
+    function adicionarServico(servico) {
+      servicosSelecionados.push(servico);
+      atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+      const lista = document.getElementById('lista-servicos');
+      lista.innerHTML = '';
+      servicosSelecionados.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        lista.appendChild(li);
+      });
+    }
+
+    function enviarWhatsApp() {
+      const numero = '5599999999999'; // Número da empresa
+      const mensagem = `Olá! Gostaria de orçamento para os seguintes serviços:\n\n- ${servicosSelecionados.join('\n- ')}`;
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    }
+    function fecharCarrinho() {
+      document.getElementById('carrinho-lateral').classList.remove('aberto');
+    }
+  </script>
+
+  <script>
+    function removerItem(botao) {
+      const card = botao.closest('.col-12');
+      card.remove();
+    }
+  </script>
+
+
+  <!--carrinho orçamento -->
+  <div id="carrinhoSidebar" class="sidebar">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Orçamento</h2>
+      <p>seu carrinho</p>
+    </div><!-- End Section Title -->
+
+    <button class="btn btn-sm btn-outline-secondary btn-fechar-carrinho" onclick="fecharCarrinho()">
+      <i class="bi bi-x-lg"></i>
+    </button>
+
+    <!--Item carrinho 1-->
+    <div class="col-12">
+      <div class="service-item card-servico d-flex align-items-start gap-3 p-2 shadow-sm rounded position-relative">
+        <div class="img" style="flex-shrink: 0;">
+          <img src="assets/img/services-1.jpg" class="img-fluid rounded"
+            style="width: 80px; height: 80px; object-fit: cover;" alt="Imagem do serviço">
+        </div>
+        <div class="details w-100">
+          <div class="icon mb-1">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h5 class="mb-1">Instalação Split 9000 BTUs</h5>
+          <p class="mb-1">Instalação completa com suporte e teste de funcionamento.</p>
+          <span class="text-success fw-bold">R$ 350,00</span>
+        </div>
+
+        <!-- Botão de Remover -->
+        <button class="btn btn-sm btn-danger btn-remover" onclick="removerItem(this)">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+    </div>
+
+    <!--Item carrinho e-->
+    <div class="col-12">
+      <div
+        class="service-item card-servico d-flex align-items-start gap-3 p-2 shadow-sm rounded position-relative w-100 mt-4 mb-2">
+        <div class="img" style="flex-shrink: 0;">
+          <img src="assets/img/services-2.jpg" class="img-fluid rounded"
+            style="width: 80px; height: 80px; object-fit: cover;" alt="Imagem do serviço">
+        </div>
+        <div class="details w-100">
+          <div class="icon mb-1">
+            <i class="bi bi-tools"></i>
+          </div>
+          <h5 class="mb-1">Limpeza Sansung 9000 BTUs</h5>
+          <p class="mb-1">Limpeza completa com suporte e teste de funcionamento.</p>
+          <span class="text-success fw-bold">R$ 240,00</span>
+        </div>
+
+        <!-- Botão de Remover -->
+        <button class="btn btn-sm btn-danger btn-remover" onclick="removerItem(this)">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+    </div>
+
+    <button onclick="enviarWhatsApp()" class="btn-whatsapp  w-100 mt-4 mb-2">
+      <i class="bi bi-whatsapp"></i> Enviar Orçamento via WhatsApp
+    </button>
+  </div>
 
 </body>
 

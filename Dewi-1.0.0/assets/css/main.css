@@ -1855,3 +1855,73 @@ section,
   /* Add your styles here */
 }
 
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 15px rgba(48, 101, 216, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 9999;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.btn-whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c5ca1;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background-color: #3c5ca1;
+}
+
+.btn-whatsapp i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.card-servico {
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.card-servico:hover {
+  background-color: #f8f9fa;
+}
+
+.btn-remover {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  display: none;
+  padding: 4px 6px;
+  font-size: 14px;
+}
+
+.card-servico:hover .btn-remover {
+  display: inline-block;
+}
+
+.btn-fechar-carrinho {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+
