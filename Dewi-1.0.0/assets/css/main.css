@@ -1978,3 +1978,10 @@ section,
   color: #fff;
 }
 
+#carrinho-itens {
+  max-height: 60vh; /* ajustável, dependendo da altura que você quiser */
+  overflow-y: auto;
+  padding-right: 10px; /* para evitar o corte com a scrollbar */
+}
+
+
