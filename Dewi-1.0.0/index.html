@@ -455,7 +455,11 @@
                 </div>
                 <h3>Instalações </h3>
                 <p>Preço médio: R$250,00 a R$1000,00</p>
-                <a href="#" class="btn-orcamento stretched-link">Adicionar ao Orçamento</a>
+                <button class="btn btn-primary btn-adicionar"
+                  onclick="adicionarAoCarrinho('instalacao', 'assets/img/services-1.jpg', 'R$ 350,00')">
+                  <i class="bi bi-cart-plus"></i> Adicionar ao Orçamento
+                </button>
+
               </div>
             </div>
           </div><!-- End Produto -->
@@ -472,7 +476,10 @@
                 </div>
                 <h3>Manutenções </h3>
                 <p>Preço médio: R$10,00 a R$800,00</p>
-                <a href="#" class="btn-orcamento stretched-link">Adicionar ao Orçamento</a>
+                <button class="btn btn-primary btn-adicionar"
+                  onclick="adicionarAoCarrinho('manutencao', 'assets/img/services-2.jpg', 'R$ 300,00')">
+                  <i class="bi bi-cart-plus"></i> Adicionar ao Orçamento
+                </button>
               </div>
             </div>
           </div><!-- End Produto -->
@@ -489,7 +496,10 @@
                 </div>
                 <h3>Limpezas </h3>
                 <p>Preço médio: R$100,00 a R$400,00</p>
-                <a href="#" class="btn-orcamento stretched-link">Adicionar ao Orçamento</a>
+                <button class="btn btn-primary btn-adicionar"
+                  onclick="adicionarAoCarrinho('limpeza', 'assets/img/services-2.jpg', 'R$ 300,00')">
+                  <i class="bi bi-cart-plus"></i> Adicionar ao Orçamento
+                </button>
               </div>
             </div>
           </div><!-- End Produto -->
@@ -497,216 +507,6 @@
         </div>
       </div>
     </section><!-- End Produtos à Venda Section -->
-
-
-
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>CHECK OUR PORTFOLIO</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 1</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Branding 1" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Product 2"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-2.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -770,7 +570,7 @@
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Dewi</span>
+            <span class="sitename">SPCLIMA</span>
           </a>
           <div class="footer-contact pt-3">
             <p>A108 Adam Street</p>
@@ -779,10 +579,9 @@
             <p><strong>Email:</strong> <span>info@example.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-whatsapp"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+  
           </div>
         </div>
 
@@ -790,38 +589,13 @@
           <h4>Useful Links</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Sobre</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Serviços</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-
+     
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Dewi</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
@@ -829,9 +603,14 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a
-          href=“https://themewagon.com>ThemeWagon
-      </div>
+        Desenvolvido por 
+        <a href="https://bootstrapmade.com/">Cauã Máximo</a> 
+        <a href="https://bootstrapmade.com/">Gabriel Callegari</a> 
+        <a href="https://bootstrapmade.com/">Kevin Davi</a> 
+
+        
+        Distributed by <a
+          href=“https://themewagon.com>SpClima</div>
     </div>
 
   </footer>
@@ -879,7 +658,7 @@
     }
 
     function enviarWhatsApp() {
-      const numero = '5514996630863'; 
+      const numero = '5514996630863';
       const mensagem = `Olá! Gostaria de orçamento para os seguintes serviços:\n\n- ${servicosSelecionados.join('\n- ')}`;
       const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
       window.open(url, '_blank');
@@ -901,7 +680,7 @@
       const camposEspecificos = container.querySelector('.campos-especificos');
       const valor = select.value;
       camposEspecificos.innerHTML = '';
-    
+
       if (valor === 'ar-condicionado') {
         camposEspecificos.innerHTML = `
           <label for="btus">BTUs:</label>
@@ -937,13 +716,76 @@
         `;
       }
     }
-    
+
     function removerItem(botao) {
       const card = botao.closest('.col-12');
       card.remove();
     }
-    </script>
-    
+  </script>
+
+ <script>function adicionarAoCarrinho(tipoServico, imagem, preco) {
+  const carrinho = document.getElementById("carrinho-itens");
+
+  // Define o nome do tipo de serviço
+  const servicoTexto = {
+    instalacao: "Instalação",
+    manutencao: "Manutenção",
+    limpeza: "Limpeza"
+  }[tipoServico] || "Outro";
+
+  // Cria o card
+  const card = document.createElement("div");
+  card.className = "col-12";
+  card.innerHTML = `
+    <div class="service-item card-servico d-flex flex-column gap-2 p-2 shadow-sm rounded position-relative">
+      <button class="btn btn-sm btn-danger btn-remover" onclick="removerItem(this)">
+        <i class="bi bi-x"></i>
+      </button>
+      <div class="img" style="flex-shrink: 0;">
+        <img src="${imagem}" class="img-fluid rounded"
+          style="width: 80px; height: 80px; object-fit: cover;" alt="Imagem do serviço">
+      </div>
+      <div class="details w-100">
+        <label>Tipo de serviço:</label>
+        <p class="form-control-plaintext m-0">${servicoTexto}</p>
+
+        <label for="produto">Tipo de produto:</label>
+        <select class="form-select" onchange="mostrarCamposEspecificos(this)">
+          <option value="">Selecione</option>
+          <option value="ar-condicionado">Ar-condicionado</option>
+          <option value="maquina-lavar">Máquina de lavar</option>
+          <option value="geladeira">Geladeira</option>
+          <option value="cortina-ar">Cortina de ar</option>
+          <option value="freezer">Freezer</option>
+          <option value="bebedouro">Bebedouro</option>
+        </select>
+
+        <div class="campos-especificos"></div>
+
+        <label for="preco">Preço:</label>
+        <input type="text" class="form-control" value="${preco}" readonly>
+      </div>
+    </div>
+  `;
+
+  carrinho.appendChild(card);
+  document.getElementById("carrinhoSidebar").style.display = "block";
+}
+
+// Remove item
+function removerItem(botao) {
+  const card = botao.closest(".col-12");
+  card.remove();
+}
+</script>
+
+<script>
+  function fecharCarrinho() {
+  const carrinhoSidebar = document.getElementById("carrinhoSidebar");
+  carrinhoSidebar.style.display = "none";
+}
+</script>
+
 
 
   <!--carrinho orçamento -->
@@ -957,50 +799,9 @@
     <button class="btn btn-sm btn-outline-secondary btn-fechar-carrinho" onclick="fecharCarrinho()">
       <i class="bi bi-x-lg"></i>
     </button>
+    
 
-    <div class="col-12">
-      <div class="service-item card-servico d-flex flex-column gap-2 p-2 shadow-sm rounded position-relative">
-        <!-- Botão Remover -->
-        <button class="btn btn-sm btn-danger btn-remover" onclick="removerItem(this)">
-          <i class="bi bi-x"></i>
-        </button>
-    
-        <!-- Imagem -->
-        <div class="img" style="flex-shrink: 0;">
-          <img src="assets/img/services-1.jpg" class="img-fluid rounded"
-            style="width: 80px; height: 80px; object-fit: cover;" alt="Imagem do serviço">
-        </div>
-    
-        <!-- Informações -->
-        <div class="details w-100">
-          <label for="tipo-servico">Tipo de serviço:</label>
-          <select class="form-select" onchange="atualizarCampos(this)" name="tipo-servico">
-            <option value="">Selecione</option>
-            <option value="manutencao">Manutenção</option>
-            <option value="instalacao">Instalação</option>
-            <option value="limpeza">Limpeza</option>
-          </select>
-    
-          <label for="produto">Tipo de produto:</label>
-          <select class="form-select" onchange="mostrarCamposEspecificos(this)">
-            <option value="">Selecione</option>
-            <option value="ar-condicionado">Ar-condicionado</option>
-            <option value="maquina-lavar">Máquina de lavar</option>
-            <option value="geladeira">Geladeira</option>
-            <option value="cortina-ar">Cortina de ar</option>
-            <option value="freezer">Freezer</option>
-            <option value="bebedouro">Bebedouro</option>
-          </select>
-    
-          <!-- Campos específicos -->
-          <div class="campos-especificos"></div>
-    
-          <!-- Preço -->
-          <label for="preco">Preço:</label>
-          <input type="text" class="form-control" value="R$ 350,00" readonly>
-        </div>
-      </div>
-    </div>
+    <div id="carrinho-itens" class="mt-3"></div>
 
     <button onclick="enviarWhatsApp()" class="btn-whatsapp  w-100 mt-4 mb-2">
       <i class="bi bi-whatsapp"></i> Enviar Orçamento via WhatsApp
