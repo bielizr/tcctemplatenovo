@@ -1925,3 +1925,56 @@ section,
   z-index: 10;
 }
 
+.card-servico select,
+.card-servico input[type="text"],
+.card-servico .form-control {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card-servico label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: block;
+  color: #343a40;
+}
+
+.campos-especificos {
+  margin-top: 10px;
+}
+
+.card-servico .form-select {
+  background-color: #f8f9fa;
+  border: 1px solid #ccc;
+}
+
+.card-servico .form-select:focus {
+  outline: none;
+  border-color: #3c5ca1;
+  box-shadow: 0 0 0 2px rgba(60, 92, 161, 0.25);
+}
+
+
+.btn-orcamento {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background-color: #0d6efd; /* azul padrão */
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orcamento:hover {
+  background-color: #0b5ed7;
+  text-decoration: none;
+  color: #fff;
+}
+
